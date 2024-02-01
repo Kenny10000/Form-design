@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Account</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/dist/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="signiup.css">
+</head>
+<body>
+    <div class="signup-form">
+        <form action="" method="post">
+            <div class="form-header">
+                <h2>Sign Up</h2>
+                <p>Fill out this form and start chating with your friends.</p>
+            </div>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="text" class="form-control" name="user_name" placeholder="Username" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control" name="user_pass" placeholder="Password" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" class="form-control" name="user_email" placeholder="email address" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <label>Country</label>
+                <select class="form-control"  name="user_country" required> 
+                    <option disabled="">Select a Country</option>
+                    <option>Nigeria</option>
+                    <option>Pakistan</option>
+                    <option>United Statesbof American</option>
+                    <option>India</option>
+                    <option>UK</option>
+                    <option>USA</option>
+                    <option>Bangladesh</option>
+                    <option>France</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <select class="form-control"  name="user_gender" required> 
+                    <option disabled="">Select your Gender</option>
+                    <option>Male</option>
+                    <option>Famale</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="checkbox-inline"><input type="checkbox" required> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+            </div>
+
+     <div class="form-group">
+       <button type="submit" class="btn btn-primary btn-block w-100" name="sign_up">Sign UP</button>
+    </div>
+     <!-- <?php include("signup_user.php"); ?>  -->
+        </form>
+        <div class="text-center small" style="color: #674288;">Already have an account? <a href="signin.html">Signin here</a></div>
+    </div>
+</body>
+</html>
